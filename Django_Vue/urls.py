@@ -22,4 +22,6 @@ urlpatterns = [
 
     path('app1/', views.app1),
     path('app2/', views.app2),
+
+    path('test/', views.test),
 ]
