@@ -3,6 +3,10 @@ import App1 from './App1.vue'
 import App2 from './App2.vue'
 import TestForm from "./TestForm";
 
+import axios from 'axios'
+
+Vue.use(axios)
+
 Vue.config.productionTip = false
 
 new Vue({
