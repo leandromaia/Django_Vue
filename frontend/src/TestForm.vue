@@ -17,12 +17,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
+                        <label for="exampleFormControlInput1">Email:</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                                placeholder="name@example.com" v-model="form.email">
                     </div>                  
                 </form>
-                <button v-on:click="submit()">Submit</button>
+                <button v-on:click="submit()">Cadastrar</button>
             </div>
         </div>
     </div>
@@ -33,6 +33,7 @@
 
 <script>
 const axios = require('axios');
+
 export default {
     data(){
         return {
@@ -43,7 +44,6 @@ export default {
             }
         }
     },
-
     methods: {
         submit(){
             axios.post('http://127.0.0.1:8000/api/person/', this.form)

@@ -1,6 +1,4 @@
 import Vue from 'vue'
-import App1 from './App1.vue'
-import App2 from './App2.vue'
 import TestForm from "./TestForm";
 
 import axios from 'axios'
@@ -8,14 +6,6 @@ import axios from 'axios'
 Vue.use(axios)
 
 Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App1),
-}).$mount('#app1')
-
-new Vue({
-  render: h => h(App2),
-}).$mount('#app2')
 
 new Vue({
   render: h => h(TestForm),
